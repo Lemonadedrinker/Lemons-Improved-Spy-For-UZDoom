@@ -1,0 +1,4 @@
+nosave user bool LIS_Enabled = true;
+nosave user float LIS_CameraScale = 1.0;
+nosave user float LIS_PositionX = 0.0;
+nosave user float LIS_PositionY = 0.0;

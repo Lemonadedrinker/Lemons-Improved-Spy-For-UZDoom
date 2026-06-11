@@ -1,0 +1,17 @@
+AddOptionMenu "OptionsMenu"
+{
+    Submenu "Lemon's Improved Spy", "SpyOptionsMain"
+}
+
+OptionMenu "SpyOptionsMain"
+{
+    Title "Lemon's Improved Spy"
+    Option "Enable Mod", "LIS_Enabled", "Boolean" 
+    StaticText ""
+    Slider "Self View Scale", "LIS_CameraScale", 0.1, 2.0, 0.1, 1, "LIS_Enabled"
+    Slider "X Position", "LIS_PositionX", 0, 1, 0.1, 2
+    Slider "Y Position", "LIS_PositionY", 0, 1, 0.1, 2
+
+    StaticText ""
+    SafeCommand "Uninstall Mod", "netevent LIS_Uninstall", "Are you sure? A map change will restart the mod."
+}
